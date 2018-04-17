@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>форма</title>
+</head>
+<body>
+	<h1 style="text-align:center">Анкета</h1>
+	
+	<form action="/api/users" method="POST"> 
+			 
+		<fieldset>
+			<legend><b> Добавление публикации </b></legend></br>
+				<label> Наличие публикации в БД Scopus </label>
+					</br>
+					<br>
+					<input type="radio" name="rating" value="да"/> да
+					<input type="radio" name="rating" value="нет"/> нет 
+					</br>
+					<br>					
+				<label>Наличие публикации в БД Web of Science</label>
+					</br>
+					<br>
+					<input type="radio" name="rating2" value="да"/> да
+					<input type="radio" name="rating2" value="нет"/> нет 
+					</br>
+					<br>
+				<label>Наличие публикации в перечне ВАК</label>
+					</br>
+					<br>
+					<input type="radio" name="rating3" value="да"/> да
+					<input type="radio" name="rating3" value="нет"/> нет 
+					</br>
+					<br>
+				<label>Наличие публикации в БД eLibrary</label>
+					</br>
+					<br>
+					<input type="radio" name="rating4" value="да"/> да
+					<input type="radio" name="rating4" value="нет"/> нет 
+					</br>
+					<br>
+				<label>Наличие публикации в БД Map of Science</label>
+					</br>
+					<br>
+					<input type="radio" name="rating5" value="да"/> да
+					<input type="radio" name="rating5" value="нет"/> нет 
+					</br>
+					<br>
+				<label>
+					DOI публикации:
+					 <input type="text" name="DOI" size="50" maxlength="100" >
+				</label>
+					<br/>
+					<br>
+				<label>
+					 ISBN журнала/издания:
+					 <input type="text" name="ISBN" size="50" maxlength="100">
+				</label>
+					<br/>
+					<br>
+				<label>
+					 Издательство:
+					 <input type="text" name="izdatelstvo" size="50" maxlength="100">
+				</label>
+					<br/>
+					<br>
+				<label>
+					Импакт-фактор издания:
+					<input type="number" name="impakt" size="50" maxlength="100">
+				</label>
+					<br/>
+					<br>
+				<label>Наличие издания в БД Scopus</label>
+					</br>
+					<br>
+					<input type="radio" name="rating6" value="да"/> да
+					<input type="radio" name="rating6" value="нет"/> нет 
+					</br>
+					<br>
+				<label>Наличие издания в БД Web of Science</label>
+					</br>
+					<br>
+					<input type="radio" name="rating7" value="да"/> да
+					<input type="radio" name="rating7" value="нет"/> нет 
+					</br>
+					<br>
+				<label>Наличие издания в перечне ВАК</label>
+					</br>
+					<br>
+					<input type="radio" name="rating8" value="да"/> да
+					<input type="radio" name="rating8" value="нет"/> нет 
+					</br>
+					<br>
+				<label>
+					Название конференции:
+					 <input type="text" name="DOI" size="50" maxlength="100" >
+				</label>
+					<br/>
+					<br>
+				<label>
+					Место проведения конференции:
+					 <input type="text" name="DOI" size="50" maxlength="100" >
+				</label>
+					<br/>
+					<br>
+				<label>
+					Дата конференции:
+					<input type="date" class="form-control" id="date" name="date">
+				</label>
+				<br/>
+				<br>
+				<label>
+					Статус конференции:
+					<select>
+						<option> отраслевая</option>
+						<option>всероссийская</option>
+						<option>международная</option>
+					</select>
+				</label>
+				<br/>
+				<br>	
+		</fieldset>
+		<p><input type="submit" value="Отправить"></p>
+	</form>
+
+</body>
+</html>
+ 
+ 
