@@ -3,6 +3,22 @@ var bodyParser = require("body-parser");
 var app = express();
 const port=3000;
 
+var mysql = require('mysql');
+var connection = mysql.createConnection({
+	host: 'localhost',
+	user: 'db_user',
+	password: 'db_user_pwd'
+	});
+	
+connection.connect();
+connection.query('use database');
+
+var client = mysql.createClient();
+client.host='127.0.0.1';
+client.port= '3306';
+client.user='someuser';
+client.password='userpass';
+client.database='node';
 
 //application/x-www-form-urlencoded
 var urlencodedParser = bodyParser.urlencoded({extended: false});
