@@ -13,13 +13,6 @@ var connection = mysql.createConnection({
 connection.connect();
 connection.query('use database');
 
-var client = mysql.createClient();
-client.host='127.0.0.1';
-client.port= '3306';
-client.user='someuser';
-client.password='userpass';
-client.database='node';
-
 //application/x-www-form-urlencoded
 var urlencodedParser = bodyParser.urlencoded({extended: false});
 
